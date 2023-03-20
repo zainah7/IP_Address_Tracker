@@ -13,9 +13,12 @@ This app tracks the location of an IP address and renders details related to tha
 
 - [Overview](#overview)
   - [Links](#links)
-- [My process](#my-process)
+  - [Working](#working)
+  - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
+  -  [Author](#author)
+
 
 
 ## Overview
@@ -30,6 +33,10 @@ Users should be able to:
 - Search for any IP addresses or domains and see the key information and location
 
 
+## Working
+
+User's IP address tracked and rendered as soon as he fires up the app. As per the user's query IP address the location is pointed and info related to the domain is displayed.
+
 ## My process
 
 ### Built with
@@ -41,3 +48,7 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
+
+## Author
+- Github - [@zainah7](https://github.com/zainah7)
+- Twitter - [@zainah_777_](https://twitter.com/zainah_777)
