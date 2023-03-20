@@ -1,6 +1,6 @@
 #  IP address tracker
 
-This app tracks the location of an IP address and renders details related to that domain like it's location, timezone, ISP. This app is built using [Leaflet.js](https://leafletjs.com/) to render the map and all the data is fetched from [IP API](https://ipapi.co/).
+This app tracks the location of an IP address and renders details related to that domain like it's location, timezone, ISP. This app is built using [Leaflet.js](https://leafletjs.com/) to render the map and all the data is fetched from [IP API](https://geo.ipify.org/).
 
 ![ IP address tracker](https://user-images.githubusercontent.com/88329634/226416756-24b09733-763c-462a-b229-3c3db5e03ba3.jpeg)
 
