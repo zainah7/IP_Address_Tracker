@@ -1,116 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+/* custom css variables */
+
 :root {
-  --veryDarkGray: hsl(0, 0%, 17%);
-  ---darkGray: hsl(0, 0%, 59%);
+  --clr-accent-900: hsl(0, 0%, 17%);
+  --clr-accent-600: hsl(0, 0%, 59%);
+  --clr-error: rgb(243, 28, 46);
+
+  --clr-neutral-100: #fff;
+  --clr-neutral-900: #000;
+
+  --ff-primary: "Rubik", sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-50: 0.6rem;
+  --fs-100: 0.7rem;
+  --fs-200: 0.825rem;
+  --fs-300: 0.925rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.1875rem;
+  --fs-600: 1.4rem;
+  --fs-700: 1.75rem;
+
+  --size-200: 1rem;
+  --size-300: 1.5rem;
+  --size-500: 7rem;
+  --size-900: 10rem;
 }
 
-html,
-body,
-p,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-blockquote,
-figure,
-fieldset,
-legend,
-textarea,
-pre,
-iframe,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--veryDarkGray);
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  font-family: "Rubik", sans-serif;
+body {
+  font-family: var(--ff-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
+/* css reset */
 
-/* Form */
-button,
-input,
-select,
-textarea {
-  margin: 0;
-}
-
-/* Box sizing */
-html {
+/* Box sizing rules */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* Media */
-img,
-embed,
-object,
-audio,
-video {
-  height: auto;
-  max-width: 100%;
-}
-
-/* Iframe */
-iframe {
-  border: 0;
-}
-
-/* Table */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
+/* Remove default margin */
+* {
+  margin: 0;
   padding: 0;
-  text-align: left;
+  font: inherit;
+  border: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-#map {
+
+html,
+body {
   height: 100%;
-  width: 100%;
-  overflow-x: hidden;
 }
-.leaflet-container {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-red6ced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* utility classes */
+
+.padding-top-100 {
+  padding-top: var(--size-200);
+}
+
+.padding-bottom-800 {
+  padding-bottom: var(--size-900);
 }

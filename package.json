@@ -1,22 +1,25 @@
 {
-  "name": "react-leaflet-ip-address-tracker",
+  "name": "ip-tracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://surriyaluavan.github.io/IP-address-tracker",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.24.0",
-    "leaflet": "^1.7.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-leaflet": "^3.2.5",
-    "react-scripts": "5.0.0",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.3",
-    "yarn": "^1.22.19"
+    "command": "^0.0.5",
+    "leaflet": "^1.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-leaflet": "^4.2.1",
+    "react-loading-icons": "^1.1.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,8 +44,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.21.3",
-    "@babel/preset-env": "^7.20.2",
-    "babel-loader": "^9.1.2"
+    "gh-pages": "^5.0.0"
   }
 }

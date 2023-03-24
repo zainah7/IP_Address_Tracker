@@ -1,0 +1,10 @@
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.location-container {
+  height: 80vh;
+  position: relative;
+  z-index: 10;
+}
