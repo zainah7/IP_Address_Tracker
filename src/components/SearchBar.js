@@ -16,7 +16,7 @@ const SearchBar = ({ setOnSearch }) => {
 
     if (checkResult.valid) {
       setSearchValue(inputVal);
-      if (searchFormat !== checkResult.format)
+      if (searchFormat !== checkResult.format);
         setSearchFormat(checkResult.format);
     } else {
       setValid(false);

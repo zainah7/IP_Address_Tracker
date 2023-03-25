@@ -36,7 +36,7 @@ function App() {
           <TailSpin stroke="#4d51aa" strokeWidth="4" height="4em" />
           <p style={{ color: "#4d51aa" }}>Loading...</p>
         </div>
-      ) : (
+      ) : ( 
         <Location position={ipGeoInfo.position} />
       )}
     </div>
