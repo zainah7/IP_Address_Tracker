@@ -2,7 +2,7 @@ import React from "react";
 import "./SearchBar.css";
 import { useState, useRef, useEffect } from "react";
 
-const APIkey = "at_cq7NQCrvvtkIn9qdcUKOo1gZziUPc";
+const APIkey = "at_7CIKWxFOBdpCASOqlFSFf2PBGie4Z";
 
 const SearchBar = ({ setOnSearch }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -16,7 +16,7 @@ const SearchBar = ({ setOnSearch }) => {
 
     if (checkResult.valid) {
       setSearchValue(inputVal);
-      if (searchFormat !== checkResult.format);
+      if (searchFormat !== checkResult.format)
         setSearchFormat(checkResult.format);
     } else {
       setValid(false);
@@ -26,7 +26,7 @@ const SearchBar = ({ setOnSearch }) => {
   const getIPGeolocationData = async (searchFormat, searchValue) => {
     try {
       const res = await fetch(
-        `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=${APIkey}&${searchFormat}=${searchValue}`
+        `https://geo.ipify.org/api/v2/country,city?apiKey=${APIkey}&${searchFormat}=${searchValue}`
       );
 
       if (res.ok) {
@@ -83,8 +83,7 @@ const SearchBar = ({ setOnSearch }) => {
 };
 
 const validateSearch = (searchVal) => {
-  const regExpIPAddress =
-    /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+  const regExpIPAddress = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
   const regExpDomain = /^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}$/;
 
   if (regExpIPAddress.test(searchVal)) {
